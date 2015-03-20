@@ -20,11 +20,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.jboss.as.quickstart</groupId>
-    <artifactId>wildfly-hibernate4</artifactId>
+    <artifactId>wildfly-hibernate4JPAConverter</artifactId>
     <version>9.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>WildFly Quickstarts: Hibernate 4</name>
-    <description>hibernate4: Application that uses Hibernate 4</description>
+    <description>hibernate4JPAConverter: Application that uses Hibernate 4 and JPA Attribute Converter</description>
 
     <licenses>
         <license>
