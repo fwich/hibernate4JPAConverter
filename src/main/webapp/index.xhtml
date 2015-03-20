@@ -19,6 +19,7 @@
    xmlns:ui="http://java.sun.com/jsf/facelets"
    xmlns:f="http://java.sun.com/jsf/core"
    xmlns:h="http://java.sun.com/jsf/html"
+   xmlns:p="http://primefaces.org/ui"
    template="/WEB-INF/templates/default.xhtml">
    <ui:define name="content">
       <h1>Welcome to JBoss!</h1>
@@ -52,6 +53,10 @@
 	    <h:outputLabel for="address" value="Address:"/>
             <h:inputText id="address" value="#{newMember.address}" />
             <h:message for="address" errorClass="invalid"/>
+
+             <h:outputLabel for="favouriteColor" value="Favourite Color:" />
+             <h:colorPicker id="favouriteColor" value="#{newMember.favouriteColor}" />
+             <h:message for="favouriteColor" errorClass="invalid" />
          </h:panelGrid>
 
          <p>

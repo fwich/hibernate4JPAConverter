@@ -16,13 +16,10 @@
  */
 package org.jboss.as.quickstart.hibernate4.model;
 
+import java.awt.*;
 import java.io.Serializable;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
+import javax.persistence.*;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -65,6 +62,9 @@ public class Member implements Serializable {
 
     private String address;
 
+  @Convert(converter = ColorConverter.class)
+    private Color favouriteColor;
+
     public Long getId() {
         return id;
     }
@@ -104,4 +104,14 @@ public class Member implements Serializable {
     public void setAddress(String address) {
         this.address = address;
     }
+
+  public Color getFavouriteColor()
+  {
+    return favouriteColor;
+  }
+
+  public void setFavouriteColor(Color favouriteColor)
+  {
+    this.favouriteColor = favouriteColor;
+  }
 }
