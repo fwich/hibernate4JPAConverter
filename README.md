@@ -1,20 +1,18 @@
-hibernate4: How to Use Hibernate 4 in an Application
+hibernate4: How to Use Hibernate 4 with JPA Converter in an Application
 ====================================================
-Author: Madhumita Sadhukhan
+Author: Florian Wich
 Level: Intermediate
-Technologies: Hibernate 4
-Summary: This quickstart performs the same functions as the _hibernate3_ quickstart, but uses Hibernate 4 for database access. Compare this quickstart to the _hibernate3_ quickstart to see the changes needed to run with Hibernate 4..
+Technologies: Hibernate 4, JPA
+Summary: This project demonstrates the Java Persistence API Attribute Converter (JPA 2.1) on wildfly with hibernate 4.
 Target Project: WildFly
-Source: <https://github.com/wildfly/quickstart/>
+Source: <https://github.com/fwich/hibernate4JPAConverter/>
 
 What is it?
 -----------
 
-This quickstart is based upon the kitchensink example, but demonstrates how to use Hibernate ORM 4 over JPA in JBoss WildFly.
+This quickstart is based upon the hibernate4 example (<https://github.com/wildfly/quickstart/tree/master/hibernate4>), but adds the use of JPA Attribute Converter.
 
 This project is setup to allow you to create a compliant Java EE 7 application using JSF 2.2, CDI 1.1, EJB 3.2, JPA 2.1 , Hibernate-Core and Hibernate Bean Validation.  It includes a persistence unit associated with Hibernate session and some sample persistence and transaction code to help you with database access in enterprise Java.
-
-You can compare this quickstart to the `hibernate3` quickstart to see the code differences between Hibernate 3 and Hibernate 4.
 
 
 System requirements
